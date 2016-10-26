@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--Latest compiled minified font awsome css-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<style type="text/css">
+		body{
+			background:black;
+			overflow:hidden;
+			margin:0;
+		}
+		canvas{
+			background:#000;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<h1 style="color: white;position: absolute;width: 100%;margin-top: 100px;
+text-align: center;font-size: 90px;">Happy Diwali</h1>
+		<canvas id="canvas"></canvas>
+	</div>
+
+
+
+	<script type="text/javascript">
+		function onLoad(){canvas=document.getElementById("canvas"),ctx=canvas.getContext("2d"),resizeCanvas(),window.requestAnimationFrame(updateWorld)}function resizeCanvas(){canvas&&(w=canvas.width=window.innerWidth,h=canvas.height=window.innerHeight)}function updateWorld(){update(),paint(),window.requestAnimationFrame(updateWorld)}function update(){particles.length<500&&Math.random()<probability&&createFirework();for(var t=[],i=0;i<particles.length;i++)particles[i].move()&&t.push(particles[i]);particles=t}function paint(){ctx.globalCompositeOperation="source-over",ctx.fillStyle="rgba(0,0,0,0.2)",ctx.fillRect(0,0,w,h),ctx.globalCompositeOperation="lighter";for(var t=0;t<particles.length;t++)particles[t].draw(ctx)}function createFirework(){xPoint=Math.random()*(w-200)+100,yPoint=Math.random()*(h-200)+100;for(var t=50*Math.random()+100,i="rgb("+~~(200*Math.random()+55)+","+~~(200*Math.random()+55)+","+~~(200*Math.random()+55)+")",a=0;t>a;a++){var e=new Particle;e.color=i;var n=Math.sqrt(25-e.vx*e.vx);Math.abs(e.vy)>n&&(e.vy=e.vy>0?n:-n),particles.push(e)}}function Particle(){this.w=this.h=4*Math.random()+1,this.x=xPoint-this.w/2,this.y=yPoint-this.h/2,this.vx=10*(Math.random()-.5),this.vy=10*(Math.random()-.5),this.alpha=.5*Math.random()+.5,this.color}window.addEventListener("resize",resizeCanvas,!1),window.addEventListener("DOMContentLoaded",onLoad,!1),window.requestAnimationFrame=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(t){window.setTimeout(t,1e3/60)};var canvas,ctx,w,h,particles=[],probability=.04,xPoint,yPoint;Particle.prototype={gravity:.05,move:function(){return this.x+=this.vx,this.vy+=this.gravity,this.y+=this.vy,this.alpha-=.01,this.x<=-this.w||this.x>=screen.width||this.y>=screen.height||this.alpha<=0?!1:!0},draw:function(t){t.save(),t.beginPath(),t.translate(this.x+this.w/2,this.y+this.h/2),t.arc(0,0,this.w,0,2*Math.PI),t.fillStyle=this.color,t.globalAlpha=this.alpha,t.closePath(),t.fill(),t.restore()}}; 
+</script>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
