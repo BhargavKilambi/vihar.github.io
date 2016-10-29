@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--Latest compiled minified font awsome css-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<style type="text/css">
+	@import url(http://fonts.googleapis.com/css?family=Lato:900|Creepster);
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+  background: radial-gradient(farthest-side circle at top, #6f0002, #000);
+  min-height: 100vh;
+}
+
+.text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 120px;
+  font-size: 7vw;
+  font-family: Creepster, Helvetica, sans-serif;
+  color: #FFF;
+  text-shadow: 2px 1px 1px #000;
+}
+
+	</style>
+</head>
+<body>
+<div class="text">Happy Halloween!!!</div>
+<canvas id = 'c'></canvas>
+<script type="text/javascript">
+	function createPumpkins(t){for(var a=0;t>a;a++)pumpkinsRy[a]=new Pumpkin;for(var a=0;a<pumpkinsRy.length;a++){var n=pumpkinsRy[a];drawPumpkin(n.x,n.y,n.h,n.l,n.theta)}}function updatePumpkins(t){ctx.clearRect(0,0,cw,ch);for(var a=0;a<pumpkinsRy.length;a++){var n=pumpkinsRy[a];n.speed>0&&n.y>ch+n.h&&(n.speed=n.Speed,n.y=n.Y,n.x=n.X),n.x+=1*n.pm,n.y+=n.speed,n.speed+=.2,n.theta+=2,drawPumpkin(n.x,n.y,n.h,n.l,n.theta)}requestId=window.requestAnimationFrame(updatePumpkins)}function start(){requestId=window.requestAnimationFrame(updatePumpkins),stopped=!1}function stopAnim(){requestId&&window.cancelAnimationFrame(requestId),stopped=!0}function drawSector(t,a,n,e,r,i,o,d){ctx.fillStyle=Grd(t,a,r,i,o),ctx.beginPath(),ctx.ellipse(t,a,n,e,d,0,2*Math.PI),ctx.closePath(),ctx.fill(),ctx.stroke()}function drawPumpkin(t,a,n,e,r){var i=t+.5*n*Math.cos(r*rad-Math.PI),o=a+.5*n*Math.sin(r*rad-Math.PI),d=t+.5*n*Math.cos(r*rad),h=a+.5*n*Math.sin(r*rad),s=t+.2*n*Math.cos(r*rad-Math.PI),c=a+.2*n*Math.sin(r*rad-Math.PI),p=t+.2*n*Math.cos(r*rad),l=a+.2*n*Math.sin(r*rad);drawSector(i,o,.7*n,.9*n,1.5*n,31,e,r*rad),drawSector(d,h,.7*n,.9*n,1.5*n,31,e,r*rad),drawSector(s,c,.7*n,.98*n,1.5*n,33,e,r*rad),drawSector(p,l,.7*n,.98*n,1.5*n,33,e,r*rad),drawSector(t,a,.5*n,n,1.5*n,35,e,r*rad)}function Pumpkin(){this.h=randomIntFromInterval(25,50),this.l=10+this.h,this.theta=Math.floor(360*Math.random()+1),this.X=Math.floor(Math.random()*cw+1),this.x=this.X,this.Y=ch+randomIntFromInterval(this.h,ch),this.y=this.Y,this.pm=Math.random()<.5?-1:1,this.Speed=-1*randomIntFromInterval(10,20),this.speed=this.Speed}function randomIntFromInterval(t,a){return Math.floor(Math.random()*(a-t+1)+t)}function Grd(t,a,n,e,r){return grd=ctx.createRadialGradient(t,a,0,t,a,n),grd.addColorStop(0,"hsl("+e+", 99%,"+r+"%)"),grd.addColorStop(1,"hsl("+e+", 99%,"+.66*r+"%)"),grd.addColorStop(1,"hsl("+e+", 99%,"+.5*r+"%)"),grd}var c=document.getElementById("c"),ctx=c.getContext("2d"),cw=c.width=window.innerWidth,ch=c.height=window.innerHeight,cx=cw/2,cy=ch/2,rad=Math.PI/180,pumpkinsRy=[],howMany=50,stopped=!0;ctx.lineWidth=3,ctx.strokeStyle="hsla(35,99%,20%,.2)",ctx.fillStyle="rgba(0,0,0,.5)","function"==typeof ctx.ellipse?console.log("It's a function"):ctx.ellipse=function(t,a,n,e,r,i,o){for(var d=i;o>d;d+=.1){var h=t+n*Math.cos(d)*Math.cos(r)-e*Math.sin(d)*Math.sin(r),s=a+n*Math.cos(d)*Math.sin(r)+e*Math.sin(d)*Math.cos(r);ctx.lineTo(h,s)}},window.addEventListener("load",start(),!1),c.addEventListener("click",function(){1==stopped?start():stopAnim()},!1),createPumpkins(howMany);
+</script>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
