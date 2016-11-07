@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--Latest compiled minified font awsome css-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<style type="text/css">
+		#main-navbar{
+			padding:10px;
+			background-color: #FFF;
+
+		}
+		#front {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 300px;
+			width: 100%;
+			z-index: 2;
+		}
+		.navbar{
+			margin-bottom: 0px;
+		}
+		.contact{
+			padding:10px;
+			border: 1px solid #CCC;
+			border-radius: 3px; 
+			background-color: #F5F5F5;
+		}
+		.btn-primary {
+			color: #333333;
+			background-color: #FFF;
+			border-color: #2e6da4;
+			margin-right: 20px;
+		}
+		.btn-primary:hover {
+			background-color: #FFF;
+			color: #333333;
+		}
+	</style>
+</head>
+<body>
+	<nav id="main-navbar" class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Brand</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<section style="background-color: #CCCCCC;padding-bottom: 40px;padding-top: 40px;" id="search-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="container-fluid">
+
+						<h1>PUSH 4 REFORM</h1>
+						<h2 class="lead">Fight for Immigration Reform</h2>
+						<p>Where does your representative stand on immigration reform? Using our tool, you can quickly and easily find your rep's stance on immigration reform, and then directly contact him or her to encourage their support for reform.
+						</p>
+					</div>
+
+				</div>
+				<div class="col-sm-6 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2" style="text-align: center;">
+					<div class='well'>
+						<div class='hole'>
+							<h2 class='notranslate'>
+								<small>Got a ZIP code?</small><br>
+								Find your rep
+							</h2>
+						</div>
+						<form class='form'>
+							<div class='form-group'>
+								<div class='input-group input-group-lg'>
+									<input autocomplete='off' class='query form-control' name='query' placeholder='ZIP Code or Name' type='text'>
+									<div class='input-group-btn'>
+										<div class='btn btn-default' data-toggle='tooltip' id='locationizer' title='Locate me!'>
+											<i class='fa fa-fw fa-location-arrow'></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='form-group'>
+								<button type="button" class='submit btn btn-lg btn-block' id="submit-btn">Find your rep</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section id="content-section" style="display: none;">
+		<div class="container" style="padding-top:20px;padding-bottom: 20px;">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li class="active">Nara Chandrababu Naidu</li>
+			</ol>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class='sidebar col-sm-4'>
+					<img width="400" style="margin-top: 20px;" class="img-responsive img-rounded center-block" src="http://www.medianama.com/wp-content/uploads/chandrababu-naidu.jpg" />
+				</div>
+				<div class="col-md-8">
+					<h2 class='bottom-margin notranslate'>
+						Nara Chandrababu Naidu
+						<small> Indian politician &middot;Chief Minister </small>
+					</h2>
+					<div class='alert alert-warning' style="overflow:hidden">
+						<h3 class="lead">Indian politician who has been Chief Minister of Andhra Pradesh since 2014. Previously he served as Chief Minister from 1995 to 2004. He is also the President of the Telugu Desam Party in Andhra Pradesh and Telangana.</h3>
+						<p class='lead'></p>
+					</div>
+					<div id='action'>
+						<p class='english'>Naidu became a Congress (I) member of the Andhra Pradesh legislative assembly (MLA) for Chandragiri constituency in 1978. The party's 20% quota for youth to run for the office was beneficial for Naidu on that occasion. Not long afterwards, he was appointed as technical education and cinematography minister in T .Anjaiah's government at the age of 28. He was the youngest minister in the Congress(I) cabinet.</p>
+						<p class=''>Naidu got the chance to show his political skills in August 1984, when Nadendla Bhaskara Rao staged a coup against NTR. He rallied the TDP MLAs together, and paraded them before the President of India. NTR was reinstated as the chief minister of Andhra Pradesh 31 days later. Impressed with his son-in-law's manoeuvres, NTR appointed Naidu general secretary of the party and he began playing an important role in the TDP after Rao's coup attempt</p>
+					</div>
+					<hr>
+					<div class="contact text-center">
+						<a id="popover" class="btn btn-primary"><i class="fa fa-phone" aria-hidden="true"></i>
+Phone</a>
+						<div id="popover-head" class="hide">
+							Call {{Name}}
+						</div>
+						<div id="popover-content" class="hide">
+							<form>
+								<div class="form-group">
+									<label for="phone">Your Phone number</label>
+									<input type="number" class="form-control" id="number" placeholder="Enter phone">
+								</div>
+								<div class="form-group">
+									<label for="email">Your Email</label>
+									<input type="email" class="form-control" id="pwd" placeholder="Enter email">
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
+							</form>
+						</div>
+
+						<a class="btn btn-primary"><i class="fa fa-envelope" aria-hidden="true"></i>
+E-mail</a>
+
+						<a class="btn btn-primary"><i class="fa fa-facebook" aria-hidden="true"></i>
+Facebook</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$('#submit-btn').click(function(){
+			$('#content-section').show();
+			$('#search-section').hide();
+		});
+		$('#popover').popover({ 
+			html : true,
+			title: function() {
+				return $("#popover-head").html();
+			},
+			content: function() {
+				return $("#popover-content").html();
+			}
+		});
+	</script>
+</body>
+</html>
