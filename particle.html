@@ -21,7 +21,6 @@
       position:relative;
       z-index: 3;
       color: #FFF;
-      margin-left:45%;
       padding-top: 120px;
     } 
 
@@ -35,7 +34,8 @@
       height: 300px;
       overflow: hidden;
       position: relative;
-      margin-bottom: 100px;
+      margin-bottom: 50px;
+      text-align: center;
     }
   </style>
 </head>
@@ -68,7 +68,7 @@
   <div class="banner">
     <div id="particle-canvas"></div>
     <!--img class="center-block" style="position: relative;margin-top: 30px;" src="" height="200" width="200"-->
-    <h1 style="">Hello</h2>
+    <div class="container"><h1 style="">A thing of beauty is jof for ever</h2></div>
     </div>
 
 
@@ -179,7 +179,7 @@ But if we use Parameter name same as Instance variable then compiler will recogn
       position: "absolute"
     }), this.l(this.canvas, {
       "z-index": "20",
-      position: "absolute"
+      position: "relative"
     }), window.addEventListener("resize", function() {
       return this.i.offsetWidth === this.i.size.width && this.i.offsetHeight === this.i.size.height ? !1 : (this.canvas.width = this.i.size.width = this.i.offsetWidth, this.canvas.height = this.i.size.height = this.i.offsetHeight, clearTimeout(this.m), void(this.m = setTimeout(function() {
         this.o = [];
