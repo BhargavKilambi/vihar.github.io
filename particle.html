@@ -1,60 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style type="text/css">
-        html,
-        body {
-          margin: 0;
-          padding: 0;
-      }
+  <title></title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style type="text/css">
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-      #particle-canvas {
-          width: 100%;
-          height: 70vh;
-      }
-      h2{
-        margin: 0px;
-      }
-      .navbar-custom{
-        margin-bottom: 0px;
-      }
+    #particle-canvas {
+      width: 100%;
+      height: 40vh;
+    }
+    .banner h1{
+      margin: 0px;
+      display: inline-block;
+      position:relative;
+      z-index: 3;
+      color: #FFF;
+      margin-left:45%;
+      padding-top: 100px;
+    } 
 
-
+    .navbar-custom{
+      margin-bottom: 0px;
+    }
+    .banner{
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+    }
   </style>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-custom">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
+  <nav class="navbar navbar-default navbar-custom">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
+      </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="banner">
     <div id="particle-canvas"></div>
     <!--img class="center-block" style="position: relative;margin-top: 30px;" src="" height="200" width="200"-->
-    <h2 style="position: relative;color: #fff;text-align: center;margin-top: 200px;">KURAMA</h2>
+    <h1 style="">Hello</h2>
+    </div>
+    <div class="container">
+      <p>loremclass Rectangle {
+        int length;
+        int breadth;
 
+        Rectangle(int len,int bre)
+        {
+        length  = len;
+        breadth = bre;
+      }
+    }
+
+    class RectangleDemo {
+    public static void main(String args[]) {
+
+    Rectangle r1 = new Rectangle(20,10);
+
+    System.out.println("Length of Rectangle : " + r1.length);
+    System.out.println("Breadth of Rectangle : " + r1.breadth);
+
+  }
+}
+Output :
+
+Length of Rectangle  : 20
+Breadth of Rectangle : 10
+Explanation :
+
+Carefully observe above program – You will found something like this –
+
+Rectangle r1 = new Rectangle(20,10);
+This is Parameterized Constructor taking argument.These arguments are used for any purpose inside Constructor Body.
+Parameterized Constructor - Constructor Taking Argument
+
+New Operator is used to Create Object.
+We are passing Parameter to Constructor as 20,10.
+These parameters are assigned to Instance Variables of the Class.
+We can Write above statement like –
+Rectangle(int length,int breadth)
+{
+  length  = length;
+  breadth = breadth;
+}
+OR
+
+Rectangle(int length,int breadth)
+{
+  this.length  = length;
+  this.breadth = breadth;
+}
+But if we use Parameter name same as Instance variable then compiler will recognize instance variable and Parameter but user or programmer may confuse. Thus we have used “this ke</p>
+</div>
 <script type="text/javascript">
     // particle.min.js hosted on GitHub
 // Scroll down for initialisation code
@@ -88,13 +154,13 @@
     }, this.init()
   }, b.prototype.init = function() {
     if (this.k = document.createElement("div"), this.i.appendChild(this.k), this.l(this.k, {
-        position: "absolute",
-        top: 0,
-        left: 0,
-        bottom: 0,
-        right: 0,
-        "z-index": 1
-      }), /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.background)) this.l(this.k, {
+      position: "absolute",
+      top: 0,
+      left: 0,
+      bottom: 0,
+      right: 0,
+      "z-index": 1
+    }), /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.background)) this.l(this.k, {
       background: this.options.background
     });
     else {
@@ -106,32 +172,32 @@
     }
     if (!/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.particleColor)) return console.error("Please specify a valid particleColor hexadecimal color"), !1;
     this.canvas = document.createElement("canvas"), this.i.appendChild(this.canvas), this.g = this.canvas.getContext("2d"), this.canvas.width = this.i.size.width, this.canvas.height = this.i.size.height, this.l(this.i, {
-      position: "fixed"
+      position: "absolute"
     }), this.l(this.canvas, {
       "z-index": "20",
-      position: "fixed"
+      position: "absolute"
     }), window.addEventListener("resize", function() {
       return this.i.offsetWidth === this.i.size.width && this.i.offsetHeight === this.i.size.height ? !1 : (this.canvas.width = this.i.size.width = this.i.offsetWidth, this.canvas.height = this.i.size.height = this.i.offsetHeight, clearTimeout(this.m), void(this.m = setTimeout(function() {
         this.o = [];
         for (var a = 0; a < this.canvas.width * this.canvas.height / this.options.density; a++) this.o.push(new c(this));
-        this.options.interactive && this.o.push(this.p), requestAnimationFrame(this.update.bind(this))
+          this.options.interactive && this.o.push(this.p), requestAnimationFrame(this.update.bind(this))
       }.bind(this), 500)))
     }.bind(this)), this.o = [];
     for (var a = 0; a < this.canvas.width * this.canvas.height / this.options.density; a++) this.o.push(new c(this));
-    this.options.interactive && (this.p = new c(this), this.p.velocity = {
-      x: 0,
-      y: 0
-    }, this.o.push(this.p), this.canvas.addEventListener("mousemove", function(a) {
-      this.p.x = a.clientX - this.canvas.offsetLeft, this.p.y = a.clientY - this.canvas.offsetTop
-    }.bind(this)), this.canvas.addEventListener("mouseup", function(a) {
-      this.p.velocity = {
-        x: (Math.random() - .5) * this.options.velocity,
-        y: (Math.random() - .5) * this.options.velocity
-      }, this.p = new c(this), this.p.velocity = {
+      this.options.interactive && (this.p = new c(this), this.p.velocity = {
         x: 0,
         y: 0
-      }, this.o.push(this.p)
-    }.bind(this))), requestAnimationFrame(this.update.bind(this))
+      }, this.o.push(this.p), this.canvas.addEventListener("mousemove", function(a) {
+        this.p.x = a.clientX - this.canvas.offsetLeft, this.p.y = a.clientY - this.canvas.offsetTop
+      }.bind(this)), this.canvas.addEventListener("mouseup", function(a) {
+        this.p.velocity = {
+          x: (Math.random() - .5) * this.options.velocity,
+          y: (Math.random() - .5) * this.options.velocity
+        }, this.p = new c(this), this.p.velocity = {
+          x: 0,
+          y: 0
+        }, this.o.push(this.p)
+      }.bind(this))), requestAnimationFrame(this.update.bind(this))
   }, b.prototype.update = function() {
     this.g.clearRect(0, 0, this.canvas.width, this.canvas.height), this.g.globalAlpha = 1;
     for (var a = 0; a < this.o.length; a++) {
