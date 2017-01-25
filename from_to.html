@@ -10,7 +10,7 @@
             font-family: Arial;
             font-size: 10pt;
         }
-    </style>
+   </style>
 </head>
 <body>
 
@@ -81,6 +81,7 @@
              <button id="book-btn" class="form-control" type="button" name="book" onclick="">
                  Book a ride
              </button>
+
          
         <div id="dvDistance">
         </div>
@@ -88,15 +89,9 @@
     </form>
     <div class="col-md-6 text-center">
 
-        <div id="dvMap" style="width: 600px; height: 600px">
+        <div  id="dvMap" style="width: 600px; height: 600px">
         </div>
     </div>
-</td>
-<td>
-</td>
-</tr>
-</table>
-<br />
 </div><!--row-->
 </div><!--container-->
 
@@ -156,8 +151,8 @@
                     var duration = response.rows[0].elements[0].duration.text;
                     var dvDistance = document.getElementById("dvDistance");
                     dvDistance.innerHTML = "";
-                    dvDistance.innerHTML += "Distance: " + distance + "<br />";
-                    dvDistance.innerHTML += "Duration:" + duration;
+                    dvDistance.innerHTML += "Distance: <h1>" + distance + "</h1><br />";
+                    dvDistance.innerHTML += "Duration: <h1>" + duration +"</h1>";
 
                 } else {
                     alert("Unable to find the distance via road.");
