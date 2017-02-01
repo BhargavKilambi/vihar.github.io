@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hello!</title>
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+    body {
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.5;
+      color: #292b2c;
+      background-color: #fff;
+  }
+  a:hover{
+      text-decoration:none; 
+  }
+  .navbar-custom{
+      margin-bottom: 0px;
+      padding-left: 15px;
+      padding-right: 15px;
+      background-color: #fff;
+  }
+  nav .container-fluid{
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+  @media(max-width: 746px){
+      nav .container-fluid{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.header {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-color: #2188B6;
+}
+.text-vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+.title-text{
+  color:white;
+  font-size: 4em;
+  margin-bottom: 20px;
+  text-shadow: 5px 5px #1476A2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media(max-width: 746px){
+  .title-text{
+    font-size: 48px;
+    font-weight: 300px;
+}
+.text-vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+}
+.ghost-button {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.ghost-button-semi-transparent {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+  border-color 0.2s ease-out;
+}
+.ghost-button-semi-transparent:hover,
+.ghost-button-semi-transparent:active {
+  background-color: #fff; /* fallback */
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #fff; /* fallback */
+  border-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.3s ease-in,
+  border-color 0.3s ease-in;
+}
+.content .container{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.content-h1{
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+  margin-bottom: 1rem;
+  color: #5A5A5A;
+}
+.content-p{
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color:#6d767d;
+}
+.break{
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  background-color: #2188B6;
+}
+.features{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.features-h1{
+    color: #464a4c;
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: .5rem;
+    line-height: 1.1;
+    color: #464A4C;
+}
+.features-p{
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: #6D7689;
+    font-weight: 200;
+}
+.footer-item{
+    content: " · ";
+    float: left;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.alignment{
+    float: right;
+}
+@media(max-width: 746px){
+    .alignment{
+        float: left;
+    }
+}
+
+/*
+    Add to Header
+    background: url(Photo Here) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    */
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-custom">
+    <div class="custom-container container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+  </div>
+
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+  </ul>
+
+  <ul class="nav navbar-nav navbar-right social">
+      <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-lg fa-google-plus"></i></a></li>
+      <li><a href="#"><i class="fa fa-lg fa-linkedin"></i></a></li>
+  </ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+
+
+<header class="header">
+    <div class="text-vertical-center">
+      <div class="container">
+        <h1 class="title-text">FAST, RELIABLE, AND SECURE DEPENDENCY MANAGEMENT.</h1>
+
+        <a class="ghost-button ghost-button-semi-transparent" href="#">Get Started</a>
+        <a class="ghost-button ghost-button-semi-transparent" href="#">Get Started</a>
+
+    </div>
+</div>
+</header>
+<section  style="padding-top: 60px;padding-bottom: 60px;">
+    <div class="content">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-7">
+            <h1 class="content-h1">Ultra Fast.</h1>
+            <p class="content-p">Yarn caches every package it downloads so it never needs to download it again. It also parallelizes operations to maximize resource utilization so install times are faster than ever.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="img-responsive center-block" src="feature-speed.png" />
+        </div>
+
+    </div><!--end-row-->
+    <hr>
+    <div class="row">
+        <div class="col-md-5">
+            <img class="img-responsive center-block" src="feature-secure.png" />
+        </div>
+        <div class="col-md-7">
+            <h1 class="content-h1" style="margin-top: 150px;">Mega Secure.</h1>
+            <p class="content-p">Yarn uses checksums to verify the integrity of every installed package before its code is executed.
+            </p>
+        </div>
+    </div><!--end-row-->
+    <hr>
+
+    <div class="row">
+      <div class="col-md-7">
+        <h1 class="content-h1" style="margin-top: 80px;">Super Reliable.</h1>
+        <p class="content-p">Using a detailed, but concise, lockfile format, and a deterministic algorithm for installs, Yarn is able to guarantee that an install that worked on one system will work exactly the same way on any other system.</p>
+    </div>
+    <div class="col-md-5">
+        <img class="img-responsive center-block" src="feature-reliable.png" />
+    </div>
+
+</div><!--end-row-->
+</div><!--end-container-->
+</div><!--end-content-->
+</section>
+
+<section class="break">
+  <div class="text-vertical-center">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-9">
+                  <h1 class="title-text" style="font-size: 3em">WHAT ARE YOU WAITING FOR?</h1>
+              </div>
+              <div class="col-md-3">
+                  <a class="ghost-button ghost-button-semi-transparent" style="margin-top: 30px;" href="#">Get Started</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="features-h1">Offline Mode</h1>
+                <p class="features-p">If you've installed a package before, you can install it again without any internet connection.</p>
+            </div>
+            <div class="col-md-4">
+                <h1 class="features-h1">Deterministic</h1>
+                <p class="features-p">The same dependencies will be installed the same exact way across every machine regardless of install order.</p>
+            </div>
+            <div class="col-md-4">
+                <h1 class="features-h1">Network Performance</h1>
+                <p class="features-p">If you've installed a package before, you can install it again without any internet connection.</p>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-md-4">
+                <h1 class="features-h1">Same Packages</h1>
+                <p class="features-p">If you've installed a package before, you can install it again without any internet connection.</p>
+            </div>
+            <div class="col-md-4">
+                <h1 class="features-h1">Offline Mode</h1>
+                <p class="features-p">If you've installed a package before, you can install it again without any internet connection.</p>
+            </div>
+            <div class="col-md-4">
+                <h1 class="features-h1">Offline Mode</h1>
+                <p class="features-p">If you've installed a package before, you can install it again without any internet connection.</p>
+            </div>
+        </div>
+
+    </div><!--End-Container-->
+</section>
+<hr>
+<footer style="padding-top: 50px;padding-bottom: 60px;">
+    <div class="container">
+    
+        <div class="row">
+        <div class="col-md-6">
+        <span> . Vihar</span>
+        <span style="margin-left: 10px;">. <a>Distributed under BSD License</a></span>
+        </div>
+
+        
+        <div class="col-md-6">
+        <div class="alignment">
+        <span> . Vihar</span>
+        <span style="margin-left: 10px;">. <a>Artwork by Classmate</a></span>
+        </div>
+        </div>
+
+       
+    </div>
+</footer>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
