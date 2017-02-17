@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carpediem</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style type="text/css">
+/*
+  primary red: #EA212E;
+  primary orange: #EF5B30;
+  */
+
+  
+  body
+  {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif!important;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background-color: #FAFAFA;
+  }
+  section{
+    width: 100%;
+  }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  .nav-li{
+    margin: 15px 5px 15px 5px;
+  }
+
+  .navbar-transparent{
+    background: none;
+    position: absolute;
+    color: #FFFFFF;
+    border-radius: 0px;
+    border: none;
+    margin-bottom: 0px;
+    width: 100%;
+    z-index: 1;
+  }
+  .navbar-default .navbar-nav>li>a {
+    color: #ddd;
+    font-size: 18px;
+  }
+  .navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+  }
+  .navbar-img{
+    padding:  0px 60px;
+  }
+
+
+  .navbar-toggle{
+    float: left;
+    margin-left: 15px;
+    border: none;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+  }
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+  }
+
+
+  .hero-unit {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(107, 0, 0, 0.4), rgba(188, 40, 0, 0.4)), url('http://i.imgur.com/njgbJQI.jpg') center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+  .text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px 40px;
+  }
+  .item-container{
+    margin-top: 170px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .item-container>.col-sm-6{
+    height: 350px;
+  }
+  .item-container>.col-sm-6{
+    text-align: center;
+    color: #fff;
+  }
+  .btn-rounded-primary{
+    border-radius: 20px;
+    border: 2px solid #EF5B30;
+    background-color: #EF5B30;
+    color: #FFF;
+    padding: 8px 25px 8px 25px;
+  }
+  .btn-rounded-primary:hover{
+    color: #FFF;
+    background-color: #EF5B30;
+  }
+  .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+    outline: none;
+  }
+
+
+
+  @media(max-width: 934px){
+    .navbar-img{
+      padding:  0px 10px;
+      width: 250px;
+    }
+    .navbar-nav>li>a{
+      padding: 10px;
+    }
+  }
+
+  @media(max-width: 768px){
+   .navbar-img{
+    display: none !important;
+  }
+  .nav-li{
+    margin: 5px;
+    display: inline;
+  }
+  .carousel{
+    display: none;
+  }
+  #hello{
+    display: none;
+  }
+}
+@media(min-width: 768px){
+  #res-hero-img{
+    display: none;
+  }
+}
+.parallax {
+      background-attachment: fixed;
+      background-position: center center;
+      background-size: cover;
+      height: 100vh;
+    }
+/*
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+   height: 350px;
+   margin-left: 200px;
+   margin-top: 170px;
+}
+.carousel-caption{
+  width: 35%;
+  left: 50%
+}
+*/
+</style>
+
+
+
+</head>
+<body>
+
+  <section>
+    <nav id="navbar-primary" class="navbar navbar-default navbar-transparent" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle custom-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+          <ul class="nav navbar-nav center-block" style="margin-top: 25px;">
+            <li class="nav-li"><a href="#">Events</a></li>
+            <li class="nav-li"><a href="#">Hospitality</a></li>
+            <li class="navbar-img">
+              <img style="margin-top: 15px;" class="img-responsive" src="logo-white-nav.png" width="200" alt="Logo Thing main logo">
+            </li>
+            <li class="nav-li"><a href="#">Register</a></li>
+            <li class="nav-li"><a href="#">Contact</a></li>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+      <div class="hero-unit">
+        <div class="text-vertical-center">
+          <div class="row">
+          <div class="col-md-2" >
+            <!--img style="margin-top: 20px;" class="img-responsive center-block" src="Titans400p.png" width="200" alt="Logo Thing main logo"-->
+          </div>
+            <div class="col-md-8">
+              <img class="img-responsive center-block" src="LogoWhite.png" width="900" alt="Logo Thing main logo">
+              <h1 class="lead" style="color: #FFF">GOD OF ALL CAMPUS EVENTS</h1>
+            </div>
+             <div class="col-md-2">
+               <!--img class="img-responsive center-block" src="Vulcans400p.png" width="200" alt="Logo Thing main logo"-->
+             </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+    <section id="hello">
+      <div class="hero-unit">
+        <div class="text-vertical-center" id="res-hero-img">
+          <img class="img-responsive center-block" src="http://i.imgur.com/9eEV77A.png" width="300" alt="Logo Thing main logo">
+        </div>
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height: 100vh">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="container item-container">
+                <div class="col-sm-6">
+                  <img class="img-responsive" src="https://eventimages.insider.in/image/main/xleEbb3CSrWJHMDZT94L_Nucleya.jpg" alt="...">
+                </div>
+                <div class="col-sm-6">
+                  <h2>Nucleya</h2>
+                  <p>Nucleya and EDM are close to synonymous in Bollywood - and we're not sure which brought the other into the limelight, but we;re glad it happened. Carpe Diem is hosting Nucleya, or Udyan Sagar, on day two. Whether you are an EDM lover or a music aficionado who shuns categories, you can expect it to be, for lack of a stronger word, on fire. 
+                  </p>
+                  <a role="button" class="btn btn-rounded-primary">View More</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="container item-container">
+                <div class="col-sm-6">
+                  <img class="img-responsive" src="https://img05.rl0.ru/d5da11943cdef46f3aa4f0cd5d1d153e/c948x948/www.redfuel.in/wp-content/uploads/2016/08/Armaan-Malik-HD-Wallpaper.jpg" alt="...">
+                </div>
+                <div class="col-sm-6">
+                  <h2>Nucleya</h2>
+                  <p>Few are immune to the charms of Bollywood, and fewer still to some of its best music. Armaan Malik, who gave us Besabriyaan and Sau Asmaan, will be leaving us mesmerised (and a little unwilling to go home) at Carpe Diem. With music reminiscent of summer showers and sepia-toned romances, we have no doubt that you will be yearning for more.
+                  </p>
+                  <a role="button" class="btn btn-rounded-primary">View More</a>
+                </div>
+              </div>
+            </div>
+
+          <!--div class="item">
+            <div class="container item-container">
+              <div class="col-sm-6">
+                <img class="img-responsive" src="http://www.nettv4u.com/fileman/Uploads/Singers/Vedala_Hemachandra.png" alt="...">
+              </div>
+              <div class="col-sm-6">
+                <h2>Hemachandra</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a role="button" class="btn btn-rounded-primary">View More</a>
+              </div>
+            </div>
+          </div-->
+
+          <div class="item">
+            <div class="container item-container">
+              <div class="col-sm-6">
+                <img class="img-responsive" src="http://lifeandtrendz.com/wp-content/uploads/2015/07/sahil.jpg" alt="...">
+              </div>
+              <div class="col-sm-6">
+                <h2>Sahil</h2>
+                <p>Who hasn’t heard of stand up comedy? Everyone loves that funny, goofy person who has a hatke take on everything. It’s the art form that makes the audience want to stand up in applause while their tummies protest in laughter.</p>
+                <a role="button" class="btn btn-rounded-primary">View More</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="container item-container">
+              <div class="col-sm-6">
+                <img class="img-responsive" src="https://scontent.fhyd1-1.fna.fbcdn.net/v/t1.0-9/16730276_820584898094705_2247592467896973081_n.png?oh=80386d3b8378edde8d635d118a8f169b&oe=593885B4" alt="...">
+              </div>
+              <div class="col-sm-6">
+                <h2>Sapan Sharma</h2>
+                <p>Today comedy is more than just humour, it has become a medium through which people share their opinions about the less funny things in life and bring to light our society’s tragic state.</p>
+                <a role="button" class="btn btn-rounded-primary">View More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div col-sm-4>
+        <img src="">
+      </div>
+      <div col-sm-4>
+        <img src="">
+      </div>
+      <div col-sm-4>
+        <img src="">
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
