@@ -72,6 +72,98 @@
     background-color: transparent;
   }
 
+/*==================== Nav-Tabs ====================================*/
+  @media screen and (max-width: 479px) {
+      .nav-tabs-responsive > li {
+        display: none;
+        width: 23%;
+      }
+      .nav-tabs-responsive > li > a {
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+        width: 100%;
+        width: 100%;
+        text-align: center;
+        vertical-align: top;
+      }
+      .nav-tabs-responsive > li.active {
+        width: 54%;
+      }
+      .nav-tabs-responsive > li.active:first-child {
+        margin-left: 23%;
+      }
+      .nav-tabs-responsive > li.active, .nav-tabs-responsive > li.prev, .nav-tabs-responsive > li.next {
+        display: block;
+      }
+      .nav-tabs-responsive > li.prev, .nav-tabs-responsive > li.next {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+      .nav-tabs-responsive > li.next > a, .nav-tabs-responsive > li.prev > a {
+        -webkit-transition: none;
+        transition: none;
+      }
+      .nav-tabs-responsive > li.next > a .text, .nav-tabs-responsive > li.prev > a .text {
+        display: none;
+      }
+      .nav-tabs-responsive > li.next > a:after, .nav-tabs-responsive > li.next > a:after, .nav-tabs-responsive > li.prev > a:after, .nav-tabs-responsive > li.prev > a:after {
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .nav-tabs-responsive > li.prev > a:after {
+        content: "\e079";
+      }
+      .nav-tabs-responsive > li.next > a:after {
+        content: "\e080";
+      }
+      .nav-tabs-responsive > li.dropdown > a > .caret {
+        display: none;
+      }
+      .nav-tabs-responsive > li.dropdown > a:after {
+        content: "\e114";
+      }
+    }
+/**
+ * Demo Styles
+ */
+ .wrapper {
+  padding: 15px 0;
+ }
+
+ .bs-example-tabs .nav-tabs {
+  margin-bottom: 15px;
+ }
+
+ @media (max-width: 479px) {
+  #narrow-browser-alert {
+    display: none;
+  }
+ }
+ @media (min-width: 768px){
+  .nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    zoom:1; /* hasLayout ie7 trigger */
+  }
+
+  .nav-tabs, .nav-pills {
+    text-align:center;
+  }
+ }
+
+ /*=====================Hero-Unit===========================================*/
+
 
   .hero-unit {
     display: table;
@@ -422,23 +514,111 @@
   
 </section>
 
+<section id="events">
+    <div class="wrapper">
+    <div class="container">
+      <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+        <ul id="myTab" class="nav nav-tabs nav-tabs-responsive" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+              <span class="text">Home</span>
+            </a>
+          </li>
+          <li role="presentation" class="next">
+            <a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">
+              <span class="text">Profile</span>
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#samsa" role="tab" id="samsa-tab" data-toggle="tab" aria-controls="samsa">
+              <span class="text">Metamorfoz by Franz Kafka</span>
+            </a>
+          </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+            <p>
+              Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater
+              eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+            </p>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+            <p>
+              Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo
+              enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio
+              cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+            </p>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="samsa" aria-labelledby="samsa-tab">
+            <p>
+              One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.
+            </p>
+            <p>
+              He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
+            </p>
+            <p>
+              The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?
+            </p>
+            <p>
+              " he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.
+            </p>
+            <p>
+              A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.
+            </p>
+            <p>
+              It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.
+            </p>
+            <p>
+              Drops of rain could be heard hitting the pane, which made him feel quite sad.
+            </p>
+            <p>
+              "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn't get into that position. However hard he threw
+              himself onto his right, he always rolled back to where he was.
+            </p>
+            <p>
+              He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before. "Oh, God", he thought, "what a strenuous career
+              it is that I've chosen!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+</section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-</script>
+    (function($) {
+
+      'use strict';
+
+      $(document).on('show.bs.tab', '.nav-tabs-responsive [data-toggle="tab"]', function(e) {
+        var $target = $(e.target);
+        var $tabs = $target.closest('.nav-tabs-responsive');
+        var $current = $target.closest('li');
+        var $parent = $current.closest('li.dropdown');
+        $current = $parent.length > 0 ? $parent : $current;
+        var $next = $current.next();
+        var $prev = $current.prev();
+        var updateDropdownMenu = function($el, position){
+          $el
+          .find('.dropdown-menu')
+          .removeClass('pull-xs-left pull-xs-center pull-xs-right')
+          .addClass( 'pull-xs-' + position );
+        };
+
+        $tabs.find('>li').removeClass('next prev');
+        $prev.addClass('prev');
+        $next.addClass('next');
+
+        updateDropdownMenu( $prev, 'left' );
+        updateDropdownMenu( $current, 'center' );
+        updateDropdownMenu( $next, 'right' );
+      });
+
+    })(jQuery);
+  </script>
 </body>
 </html>
