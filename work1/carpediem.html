@@ -153,11 +153,11 @@
   }
 }
 .parallax {
-      background-attachment: fixed;
-      background-position: center center;
-      background-size: cover;
-      height: 100vh;
-    }
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
 /*
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
    height: 350px;
@@ -169,6 +169,14 @@
   left: 50%
 }
 */
+
+.section-paddings{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.col-md-4-paddings{
+  padding: 10px;
+}
 </style>
 
 
@@ -190,13 +198,13 @@
           </button>
         </div>
         <div class="collapse navbar-collapse" id="navbar-primary-collapse">
-          <ul class="nav navbar-nav center-block" style="margin-top: 25px;">
-            <li class="nav-li"><a href="#">Events</a></li>
+          <ul class="nav navbar-nav center-block" style="margin-top:25px;">
+            <li class="nav-li"><a href="#carousel-section">Pro-Shows</a></li>
             <li class="nav-li"><a href="#">Hospitality</a></li>
             <li class="navbar-img">
               <img style="margin-top: 15px;" class="img-responsive" src="logo-white-nav.png" width="200" alt="Logo Thing main logo">
             </li>
-            <li class="nav-li"><a href="#">Register</a></li>
+            <li class="nav-li"><a href="#sponsors">Sponsors</a></li>
             <li class="nav-li"><a href="#">Contact</a></li>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -205,70 +213,70 @@
       <div class="hero-unit">
         <div class="text-vertical-center">
           <div class="row">
-          <div class="col-md-2" >
-            <!--img style="margin-top: 20px;" class="img-responsive center-block" src="Titans400p.png" width="200" alt="Logo Thing main logo"-->
-          </div>
+            <div class="col-md-2" >
+              <!--img style="margin-top: 20px;" class="img-responsive center-block" src="Titans400p.png" width="200" alt="Logo Thing main logo"-->
+            </div>
             <div class="col-md-8">
               <img class="img-responsive center-block" src="LogoWhite.png" width="900" alt="Logo Thing main logo">
               <h1 class="lead" style="color: #FFF">GOD OF ALL CAMPUS EVENTS</h1>
             </div>
-             <div class="col-md-2">
-               <!--img class="img-responsive center-block" src="Vulcans400p.png" width="200" alt="Logo Thing main logo"-->
-             </div>
-          </div>
-        </div>
+            <div class="col-md-2">
+             <!--img class="img-responsive center-block" src="Vulcans400p.png" width="200" alt="Logo Thing main logo"-->
+           </div>
+         </div>
+       </div>
+     </div>
+
+   </section>
+
+
+
+
+
+   <section id="hello">
+    <div class="hero-unit">
+      <div class="text-vertical-center" id="res-hero-img">
+        <img class="img-responsive center-block" src="http://i.imgur.com/9eEV77A.png" width="300" alt="Logo Thing main logo">
       </div>
 
-    </section>
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height: 100vh">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
 
-
-
-
-
-    <section id="hello">
-      <div class="hero-unit">
-        <div class="text-vertical-center" id="res-hero-img">
-          <img class="img-responsive center-block" src="http://i.imgur.com/9eEV77A.png" width="300" alt="Logo Thing main logo">
-        </div>
-
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height: 100vh">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <div class="container item-container">
-                <div class="col-sm-6">
-                  <img class="img-responsive" src="https://eventimages.insider.in/image/main/xleEbb3CSrWJHMDZT94L_Nucleya.jpg" alt="...">
-                </div>
-                <div class="col-sm-6">
-                  <h2>Nucleya</h2>
-                  <p>Nucleya and EDM are close to synonymous in Bollywood - and we're not sure which brought the other into the limelight, but we;re glad it happened. Carpe Diem is hosting Nucleya, or Udyan Sagar, on day two. Whether you are an EDM lover or a music aficionado who shuns categories, you can expect it to be, for lack of a stronger word, on fire. 
-                  </p>
-                  <a role="button" class="btn btn-rounded-primary">View More</a>
-                </div>
+        <!-- Wrapper for slides -->
+        <div  id="carousel-section" class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="container item-container">
+              <div class="col-sm-6">
+                <img class="img-responsive" src="https://eventimages.insider.in/image/main/xleEbb3CSrWJHMDZT94L_Nucleya.jpg" alt="...">
+              </div>
+              <div class="col-sm-6">
+                <h2>Nucleya</h2>
+                <p>Nucleya and EDM are close to synonymous in Bollywood - and we're not sure which brought the other into the limelight, but we;re glad it happened. Carpe Diem is hosting Nucleya, or Udyan Sagar, on day two. Whether you are an EDM lover or a music aficionado who shuns categories, you can expect it to be, for lack of a stronger word, on fire. 
+                </p>
+                <a role="button" class="btn btn-rounded-primary">View More</a>
               </div>
             </div>
-            <div class="item">
-              <div class="container item-container">
-                <div class="col-sm-6">
-                  <img class="img-responsive" src="https://img05.rl0.ru/d5da11943cdef46f3aa4f0cd5d1d153e/c948x948/www.redfuel.in/wp-content/uploads/2016/08/Armaan-Malik-HD-Wallpaper.jpg" alt="...">
-                </div>
-                <div class="col-sm-6">
-                  <h2>Nucleya</h2>
-                  <p>Few are immune to the charms of Bollywood, and fewer still to some of its best music. Armaan Malik, who gave us Besabriyaan and Sau Asmaan, will be leaving us mesmerised (and a little unwilling to go home) at Carpe Diem. With music reminiscent of summer showers and sepia-toned romances, we have no doubt that you will be yearning for more.
-                  </p>
-                  <a role="button" class="btn btn-rounded-primary">View More</a>
-                </div>
+          </div>
+          <div class="item">
+            <div class="container item-container">
+              <div class="col-sm-6">
+                <img class="img-responsive" src="https://img05.rl0.ru/d5da11943cdef46f3aa4f0cd5d1d153e/c948x948/www.redfuel.in/wp-content/uploads/2016/08/Armaan-Malik-HD-Wallpaper.jpg" alt="...">
+              </div>
+              <div class="col-sm-6">
+                <h2>Nucleya</h2>
+                <p>Few are immune to the charms of Bollywood, and fewer still to some of its best music. Armaan Malik, who gave us Besabriyaan and Sau Asmaan, will be leaving us mesmerised (and a little unwilling to go home) at Carpe Diem. With music reminiscent of summer showers and sepia-toned romances, we have no doubt that you will be yearning for more.
+                </p>
+                <a role="button" class="btn btn-rounded-primary">View More</a>
               </div>
             </div>
+          </div>
 
           <!--div class="item">
             <div class="container item-container">
@@ -324,44 +332,113 @@
 </section>
 
 <section id="pokercards" style="background-image: url(http://i.imgur.com/njgbJQI.jpg)">
-<div class="container">
-  <div class="row">
-  <h1 class="lead text-center" style="color: #FFF">Check Whos Playing </h1>
-  <hr>
-    <div class="col-md-4">
-      <img class="img-responsive center-block" src="pcard1.png">
+  <div class="container">
+    <div class="row">
+      <h1 class="lead text-center" style="color: #FFF">Check Whos Playing </h1>
+      <hr>
+      <div class="col-md-4">
+        <img class="img-responsive center-block" src="pcard1.png">
+      </div>
+      <br>
+      <div class="col-md-4">
+        <img class="img-responsive center-block" src="pcard2.png">
+      </div>
+      <br>
+      <div class="col-md-4">
+        <img class="img-responsive center-block" src="pcard3.png">
+      </div>
+      <br>
     </div>
-    <br>
-     <div class="col-md-4">
-      <img class="img-responsive center-block" src="pcard2.png">
-    </div>
-    <br>
-     <div class="col-md-4">
-      <img class="img-responsive center-block" src="pcard3.png">
-    </div>
-    <br>
   </div>
-</div>
+</section>
+
+
+<section id="sponsors" class="section-paddings">
+  <div class="container">
+    <h2 class="text-center" style="font-weight: 300">Meet Our Sponsors</h2>
+    <hr>
+    <div class="row" style="margin-bottom: 20px;">
+      <h3 class="text-center" style="font-weight: 300">Platinum Sponsors</h3>
+      <img class="img-responsive center-block" src="http://placehold.it/450x200">
+    </div>
+
+    <div class="row">
+      <h3 class="text-center" style="font-weight: 300">Gold Sponsors</h3>
+      <div class="col-md-4 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/350x150">
+      </div>
+      <div class="col-md-4 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/350x150">
+      </div>
+
+      <div class="col-md-4 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/350x150">
+      </div>
+    </div>
+
+    <!--div class="row">
+      <div class="col-md-4 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/350x150">
+      </div>
+      <div class="col-md-4 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/350x150">
+      </div>
+
+      <div class="col-md-4 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/350x150">
+      </div>
+    </div-->
+
+    <div class="row">
+    <h3 class="text-center" style="font-weight: 300">Silver Sponsors</h3>
+      <div class="col-md-3 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/250x100">
+      </div>
+      <div class="col-md-3 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/250x100">
+      </div>
+
+      <div class="col-md-3 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/250x100">
+      </div>
+      <div class="col-md-3 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/250x100">
+      </div>
+
+      <div class="col-md-3 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/250x100">
+      </div>
+      <div class="col-md-3 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/250x100">
+      </div>
+
+      <div class="col-md-3 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/250x100">
+      </div>
+      <div class="col-md-3 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/250x100">
+      </div>
+    </div>
   
 </section>
 
 
-<section>
-  <div class="container">
-    <div class="row">
-      <div col-sm-4>
-        <img src="">
-      </div>
-      <div col-sm-4>
-        <img src="">
-      </div>
-      <div col-sm-4>
-        <img src="">
-      </div>
-    </div>
-  </div>
-</section>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+</script>
 </body>
 </html>
