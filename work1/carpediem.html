@@ -72,8 +72,18 @@
     background-color: transparent;
   }
 
+.nav-tabs>li>a{
+  color: #555;
+}
+.nav-tabs{
+  border: none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  border: 2px solid #555;
+}
+
 /*==================== Nav-Tabs ====================================*/
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 768px) {
       .nav-tabs-responsive > li {
         display: none;
         width: 23%;
@@ -221,7 +231,7 @@
     }
   }
 
-  @media(max-width: 768px){
+@media(max-width: 768px){
    .navbar-img{
     display: none !important;
   }
@@ -243,12 +253,14 @@
   #pokercards{
     display: none;
   }
-}
-.parallax {
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  height: 100vh;
+  .nav-tabs-responsive>li{
+    display: table-cell;
+    width: 1%;
+  }
+  .nav-tabs.nav-justified > li > a {
+    text-align: center;
+  }
+
 }
 /*
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
@@ -325,7 +337,7 @@
 
 
 
-   <section id="hello">
+   <section id="hello" style="overflow: hidden;">
     <div class="hero-unit">
       <div class="text-vertical-center" id="res-hero-img">
         <img class="img-responsive center-block" src="http://i.imgur.com/9eEV77A.png" width="300" alt="Logo Thing main logo">
@@ -483,31 +495,31 @@
 
     <div class="row">
     <h3 class="text-center" style="font-weight: 300">Silver Sponsors</h3>
-      <div class="col-md-3 col-md-4-paddings">
+      <div class="col-md-3 col-sm-6 col-md-4-paddings">
         <img class="img-responsive center-block" src="http://placehold.it/250x100">
       </div>
-      <div class="col-md-3 col-md-4-paddings">
-        <img class="img-responsive center-block" src="http://placehold.it/250x100">
-      </div>
-
-      <div class="col-md-3 col-md-4-paddings">
-        <img class="img-responsive center-block" src="http://placehold.it/250x100">
-      </div>
-      <div class="col-md-3 col-md-4-paddings">
+      <div class="col-md-3 col-sm-6 col-md-4-paddings">
         <img class="img-responsive center-block" src="http://placehold.it/250x100">
       </div>
 
-      <div class="col-md-3 col-md-4-paddings">
+      <div class="col-md-3 col-sm-6 col-md-4-paddings">
         <img class="img-responsive center-block" src="http://placehold.it/250x100">
       </div>
-      <div class="col-md-3 col-md-4-paddings">
+      <div class="col-md-3 col-sm-6 col-md-4-paddings">
         <img class="img-responsive center-block" src="http://placehold.it/250x100">
       </div>
 
-      <div class="col-md-3 col-md-4-paddings">
+      <div class="col-md-3 col-sm-6 col-md-4-paddings">
         <img class="img-responsive center-block" src="http://placehold.it/250x100">
       </div>
-      <div class="col-md-3 col-md-4-paddings">
+      <div class="col-md-3 col-sm-6 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/250x100">
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-md-4-paddings">
+        <img class="img-responsive center-block" src="http://placehold.it/250x100">
+      </div>
+      <div class="col-md-3 col-sm-6 col-md-4-paddings">
         <img class="img-responsive center-block" src="http://placehold.it/250x100">
       </div>
     </div>
