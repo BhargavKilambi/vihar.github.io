@@ -15,20 +15,22 @@ section{
   width: 100%;
 }
 
-
+/* ================================================================================ */
+/* navbar */
+/* ================================================================================ */
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
 }
-
 .navbar .navbar-collapse {
   text-align: center;
 }
-
 .nav-li{
   margin: 15px 5px 15px 5px;
 }
-
+.nav>li>a:focus, .nav>li>a:hover{
+  background-color: transparent;
+}
 .navbar-transparent{
   background: none;
   position: absolute;
@@ -49,8 +51,6 @@ section{
 .navbar-img{
   padding:  0px 60px;
 }
-
-
 .navbar-toggle{
   float: left;
   margin-left: 15px;
@@ -63,6 +63,9 @@ section{
   background-color: transparent;
 }
 
+/* ================================================================================ */
+/* nav-tabs */
+/* ================================================================================ */
 .nav-tabs>li>a{
   color: #FF754A;
   font-size: 20px;
@@ -84,12 +87,102 @@ section{
   color: #FF754A;
   border-radius: 50%;
 }
-.nav>li>a:focus, .nav>li>a:hover{
-  background-color: transparent;
+
+/* ================================================================================ */
+/* Hero units */
+/* ================================================================================ */
+
+.hero-unit {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(107, 0, 0, 0.4), rgba(188, 40, 0, 0.4), rgba(0,0,0,0.25)), url('http://i.imgur.com/njgbJQI.jpg') center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0px 40px;
 }
 
-/*==================== Nav-Tabs ====================================*/
-@media screen and (max-width: 768px) {
+/* ================================================================================ */
+/* Carasoule */
+/* ================================================================================ */
+
+.item-container{
+  margin-top: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.item-container>.col-sm-6{
+  height: 350px;
+}
+.item-container>.col-sm-6{
+  text-align: center;
+  color: #fff;
+}
+.carousel-control.left{
+  background: none;
+  background-image: none;
+}
+.carousel-control.right{
+  background: none;
+  background-image: none;
+}
+
+/* ================================================================================ */
+/* buttons */
+/* ================================================================================ */
+
+.btn-rounded-primary{
+  border-radius: 20px;
+  border: 2px solid #EF5B30;
+  background-color: #EF5B30;
+  color: #FFF;
+  padding: 8px 25px 8px 25px;
+}
+.btn-rounded-primary:hover{
+  color: #FFF;
+  background-color: #EF5B30;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+  outline: none;
+}
+
+/* ================================================================================ */
+/* TabView Media Quiers */
+/* ================================================================================ */
+
+@media(max-width: 934px){
+  .navbar-img{
+    padding:  0px 10px;
+    width: 250px;
+  }
+  .navbar-nav>li>a{
+    padding: 10px;
+  }
+}
+@media(max-width: 768px){
+  .navbar-img{
+    display: none !important;
+  }
+  .nav-li{
+    margin: 5px;
+    display: inline;
+  }
+  .carousel{
+    display: none;
+  }
+  .pro-shows{
+    display: none;
+  }
+
+  /* ====== nav-tabs ======== */
   .nav-tabs-responsive > li {
     display: none;
     width: 23%;
@@ -100,7 +193,6 @@ section{
     text-overflow: ellipsis;
     white-space: nowrap;
     word-wrap: normal;
-    width: 100%;
     width: 100%;
     text-align: center;
     vertical-align: top;
@@ -149,119 +241,10 @@ section{
     content: "\e114";
   }
 }
-/**
- * Demo Styles
- */
- .wrapper {
-  padding: 15px 0;
-}
 
-.bs-example-tabs .nav-tabs {
-  margin-bottom: 30px;
-}
-
-@media (max-width: 479px) {
-  #narrow-browser-alert {
-    display: none;
-  }
-}
-@media (min-width: 768px){
-  .nav-tabs > li, .nav-pills > li {
-    float:none;
-    display:inline-block;
-    *display:inline; /* ie7 fix */
-    zoom:1; /* hasLayout ie7 trigger */
-  }
-
-  .nav-tabs, .nav-pills {
-    text-align:center;
-  }
-}
-
-/*=====================Hero-Unit===========================================*/
-
-
-.hero-unit {
-  display: table;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(rgba(107, 0, 0, 0.4), rgba(188, 40, 0, 0.4), rgba(0,0,0,0.25)), url('http://i.imgur.com/njgbJQI.jpg') center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-.text-vertical-center {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  padding: 0px 40px;
-}
-.item-container{
-  margin-top: 60px;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-.item-container>.col-sm-6{
-  height: 350px;
-}
-.item-container>.col-sm-6{
-  text-align: center;
-  color: #fff;
-}
-.btn-rounded-primary{
-  border-radius: 20px;
-  border: 2px solid #EF5B30;
-  background-color: #EF5B30;
-  color: #FFF;
-  padding: 8px 25px 8px 25px;
-}
-.btn-rounded-primary:hover{
-  color: #FFF;
-  background-color: #EF5B30;
-}
-.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
-  outline: none;
-}
-
-
-
-@media(max-width: 934px){
-  .navbar-img{
-    padding:  0px 10px;
-    width: 250px;
-  }
-  .navbar-nav>li>a{
-    padding: 10px;
-  }
-}
-
-@media(max-width: 768px){
-  .navbar-img{
-    display: none !important;
-  }
-  .nav-li{
-    margin: 5px;
-    display: inline;
-  }
-  .carousel{
-    display: none;
-  }
-  .pro-shows{
-    display: none;
-  }
-}
-
-.carousel-control.left{
-  background: none;
-  background-image: none;
-}
-.carousel-control.right{
-  background: none;
-  background-image: none;
-}
-
+/* ================================================================================ */
+/* Desktop Media Quiers */
+/* ================================================================================ */
 @media(min-width: 768px){
   #res-hero-img{
     display: none;
@@ -269,18 +252,27 @@ section{
   .pokercards{
     display: none;
   }
-  .nav-tabs-responsive>li{
-    display: table-cell;
-    width: 1%;
-  }
-  .nav-tabs.nav-justified > li > a {
-    text-align: center;
-  }
   .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
     margin-top: -85px;
   }
+  .nav-tabs-responsive>li{
+    display: table-cell;
+    width: 1%;
+    float: none;
+  }
+  .nav-tabs-responsive>li>a{
+    text-align: center;
+  }
+  .nav-tas-responsive{
+    width: 100%;
+  }
 
 }
+
+/* ================================================================================ */
+/* Grids */
+/* ================================================================================ */
+
 .section-paddings{
   padding-top: 20px;
   padding-bottom: 20px;
