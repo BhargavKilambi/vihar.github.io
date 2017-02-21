@@ -1,83 +1,23 @@
+<!--
+
+____ _     _ _    ____                          _ _                
+ / ___| |__ (_) |_ / ___|__ _ _ __ _ __   ___  __| (_) ___ _ __ ___  
+| |   | '_ \| | __| |   / _` | '__| '_ \ / _ \/ _` | |/ _ \ '_ ` _ \ 
+| |___| |_) | | |_| |__| (_| | |  | |_) |  __/ (_| | |  __/ | | | | |
+ \____|_.__/|_|\__|\____\__,_|_|  | .__/ \___|\__,_|_|\___|_| |_| |_|
+                                  |_|
+
+
+Vihar Kurama (github.com/vihar)
+-->
+
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Carpediem-Timer</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-	<style type="text/css">
-
-		#days {
-			font-size: 100px;
-			color: #FFF;
-		}
-		#hours {
-			font-size: 100px;
-			color: #FFF;
-		}
-		#minutes {
-			font-size: 100px;
-			color: #FFF;
-		}
-		#seconds {
-			font-size: 100px;
-			color: #FFF;
-		}
-
-		div {
-			display: inline-block;
-			line-height: 1;
-			padding: 20px;
-			font-size: 40px;
-		}
-
-		span {
-			display: block;
-			font-size: 20px;
-			color: white;
-		}
-
-		body {
-			display: table;
-			position: relative;
-			width: 100%;
-			height: 100vh;
-			background: linear-gradient(rgba(0,0,0,0.9) 10%,rgba(0,0,0,0.6) 80%, rgba(0,0,0,0.6) 10%), url('assets/pro-shows-bg.jpg') no-repeat center bottom;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			background-size: cover;
-			-o-background-size: cover;
-		}
-		.text-vertical-center {
-			display: table-cell;
-			text-align: center;
-			vertical-align: middle;
-			padding: 0px 40px;
-		}
-		.ghost-button-rounded-corners {
-			display: inline-block;
-			width: 200px;
-			padding: 8px;
-			color: #EF5B30;
-			border: 2px solid #EF5B30;
-			border-radius: 5px;
-			text-align: center;
-			outline: none;
-			text-decoration: none;
-			background-color: transparent;
-			font-size: 18px;
-		}
-		.ghost-button-rounded-corners:hover,
-		.ghost-button-rounded-corners:active {
-			background-color: #fff;
-			color: #000;
-		}
-		a{
-			text-decoration: none;
-		}
-		a:hover{
-			text-decoration: none;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="assets/timer.css">
 </head>
 
 <body>
@@ -90,7 +30,7 @@
 			<div id="seconds"></div>
 		</div>
 		<br>
-		<a role="button" class="ghost-button ghost-button-rounded-corners" href="home">Continue to website</a>
+		<a role="button" class="ghost-button ghost-button-rounded-corners" href="#">Website Coming Soon</a>
 	</div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -98,7 +38,7 @@
 
 		function makeTimer() {
 
-			var endTime = new Date("March 24, 2017 18:00:00 PDT");			
+			var endTime = new Date("March 24, 2017 12:00:00 PDT");			
 			var endTime = (Date.parse(endTime)) / 1000;
 
 			var now = new Date();
