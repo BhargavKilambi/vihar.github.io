@@ -10,6 +10,9 @@ body {
 	background-size: cover;
 	-o-background-size: cover;
 }
+a{
+	text-decoration: none !important ;
+}
 div {
 	display: inline-block;
 	line-height: 1;
@@ -43,8 +46,8 @@ span {
 }
 .ghost-button-rounded-corners:hover,
 .ghost-button-rounded-corners:active {
-	background-color: #fff;
-	color: #000;
+	background-color: transparent;
+	color: #FFF;
 }
 a{
 	text-decoration: none;
