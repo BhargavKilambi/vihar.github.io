@@ -53,7 +53,7 @@
                 fill: 'none', 
                 'stroke-width': 4,
                 'stroke-opacity': 0.4,
-                stroke: function(d) { return d3.hsl(hueScale(d), 1, 0.5); }
+                stroke: function(d) { return d3.hsl(hueScale(d), 1, 0.10); }
            });
 
         circles.exit().remove(); 
